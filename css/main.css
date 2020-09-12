@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background: #1a1a2e;
+	color:#e94560;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 15px 25px;
+	/*position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 999;*/
+}
+
+header h1 {
+	font-family: 'Roboto Slab', serif;
+}
+
+header nav ul {
+	list-style: none;
+	margin-left: 200px;
+	margin-top: 10px;
+}
+
+header nav ul li {
+	display : inline-block;
+	margin-right: 5px;
+}
+
+header a {
+	color: #e94560;
+	text-decoration: none;
+	font-family: 'Roboto Slab', serif;
+	font-size: 22px;
+}
+
+header a .current {
+	border-bottom : 2px solid #e94560;
+	margin-bottom: 5px;
+}
+
+/*header .btn {
+	width:100px;
+	margin-left: 275px;
+	background: #e94560;
+	color: #1a1a1a;
+	padding: 5px;
+	font-family: 'Roboto Slab', serif;
+}*/
+
+.showcase {
+	height: 110vh;
+	background: #1a1a2e;
+	/*background-image: url('../img/h1_hero.png');*/
+	background-position: center;
+	background-size: cover;
+}
+
+.showcase h2{
+	font-family: 'Roboto Slab', serif;
+	color:#e94560;
+	font-size: 40px;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-left: 450px;
+}
+
+.showcase h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 300px;
+	color:#e94560 ;
+	padding-left: 25px;
+	padding-top: 100px;
+	letter-spacing: 1;
+}
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 25px 150px;
+	margin-top: -75px;
+	background: #fff;
+	border-radius: 5px;
+	border-bottom: 5px solid #1a1a2e;
+}
+
+.about img {
+	width: 400px;
+	margin: 5px;
+
+}
+
+.about h1{
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	margin-top: 10px;
+	color: #1a1a2e;
+}
+
+.about p{
+	font-family: 'Roboto Slab', serif;
+	padding: 25px;
+	line-height: 1.5;
+	color: #1a1a2e;
+	font-weight: bold;
+}
+
+.skills {
+	background: #1a1a2e;
+	margin-top: 75px;
+}
+
+.skills h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size:35px;
+	font-weight: bold;
+	text-align: center;
+	color: #e94560;
+	margin-top: 15px;
+}
+
+.skills .card-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.skills .card {
+	width: 300px;
+	height: 300px;
+	background: #e94560;
+	color: #1a1a2e;
+	margin: 60px;
+	border-radius: 5px;
+	margin-bottom: 260px;
+
+}
+
+.skills .card i {
+	margin: 45px;
+	margin-left: 125px;
+}
+
+.skills .card h2 {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+.skills .card h3 {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	margin: 25px;
+}
+
+.portifolio {
+	background: #fff;
+	margin: -120px 150px 5px 150px;
+	border-radius: 5px;
+	border-bottom: 5px solid #1a1a2e;
+}
+
+.portifolio h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size:35px;
+	font-weight: bold;
+	text-align: center;
+	color: #1a1a2e;
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.portifolio-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-left: 30px;
+
+}
+
+.portifolio-grid img {
+	margin: 5px;
+}
