@@ -30,7 +30,7 @@ header nav ul {
 
 header nav ul li {
 	display : inline-block;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 header a {
@@ -40,9 +40,20 @@ header a {
 	font-size: 22px;
 }
 
-header a .current {
+header a:hover {
+	color: #e94560;
+	text-decoration: none;
+	font-family: 'Roboto Slab', serif;
+	font-size: 22px;
 	border-bottom : 2px solid #e94560;
-	margin-bottom: 5px;
+	padding-bottom: 8px;
+}
+
+
+header a.current {
+	border-bottom : 2px solid #e94560;
+	padding-bottom: 8px;
+	
 }
 
 /*header .btn {
@@ -80,7 +91,7 @@ header a .current {
 	letter-spacing: 1;
 }
 
-.about{
+.about-section{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 25px 150px;
@@ -90,20 +101,20 @@ header a .current {
 	border-bottom: 5px solid #1a1a2e;
 }
 
-.about img {
+.about-section img {
 	width: 400px;
 	margin: 5px;
 
 }
 
-.about h1{
+.about-section h1{
 	font-family: 'Roboto Slab', serif;
 	text-align: center;
 	margin-top: 10px;
 	color: #1a1a2e;
 }
 
-.about p{
+.about-section p{
 	font-family: 'Roboto Slab', serif;
 	padding: 25px;
 	line-height: 1.5;
@@ -122,7 +133,7 @@ header a .current {
 	font-weight: bold;
 	text-align: center;
 	color: #e94560;
-	margin-top: 15px;
+	padding-top: 25px;
 }
 
 .skills .card-grid {
@@ -157,9 +168,313 @@ header a .current {
 	margin: 25px;
 }
 
-.portifolio {
+.portifolio-section {
 	background: #fff;
 	margin: -120px 150px 5px 150px;
+	border-radius: 5px;
+	border-bottom: 5px solid #1a1a2e;
+}
+
+.portifolio-section h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size:35px;
+	font-weight: bold;
+	text-align: center;
+	color: #1a1a2e;
+	padding-top: 25px;
+	margin-bottom: 35px;
+}
+
+.portifolio-section-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-left: 30px;
+
+}
+
+.portifolio-section-grid img {
+	margin: 5px;
+}
+
+.contact {
+	background: #1a1a2e;
+	margin-top: 45px;
+}
+
+.contact h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size:35px;
+	font-weight: bold;
+	text-align: center;
+	color: #e94560;
+	padding-top: 25px;
+	margin-bottom: 35px;
+}
+
+.contact .contact-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.contact form {
+	display: block;
+	margin: 35px;
+	margin-left: 125px;
+}
+
+.contact form input {
+	padding: 10px;
+	width: 450px;
+	background: transparent;
+	border: 2px solid #e94560;
+	color: #e94560;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	border-radius: 5px;
+	display: block;
+	margin: 15px;
+	outline: none;
+}
+
+.contact form textarea {
+	padding: 10px;
+	width: 450px;
+	background: transparent;
+	border: 2px solid #e94560;
+	color: #e94560;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	border-radius: 5px;
+	display: block;
+	margin: 15px;
+	outline: none;
+}
+
+.contact form button {
+	padding: 5px;
+	width: 450px;
+	background: #e94560;
+	border: 1px solid #e94560;
+	color: #1a1a2e;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	display: block;
+	margin: 15px;
+	outline: none;
+}
+
+.contact .address {
+	margin: 35px;
+}
+
+.contact .address h4{
+	color: #e94560;
+	font-family: 'Roboto Slab', serif;
+	padding: 25px;
+	font-size: 18px;
+}
+
+footer {
+	background: #1a1a2e;
+	padding: 45px;
+}
+footer .social {
+	margin-left: 490px;
+}
+
+footer .social a {
+	color: #e94560;
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
+footer .social a:hover {
+	color: #fff;
+}
+
+footer .copy p {
+	font-family: 'Roboto Slab', serif;
+	padding: 15px;
+	line-height: 1;
+	color: #e94560;
+	font-weight: bold;
+	text-align: center;
+}
+
+footer .copy a {
+	font-family: 'Roboto Slab', serif;
+	padding: 15px;
+	padding-left: 0;
+	line-height: 1;
+	color: #e94560;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer .copy a:hover {
+	border-bottom: 2px solid #e94560;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+footer .copy i {
+	padding: 5px;
+	transition: 1s all ease-in-out;
+}
+
+footer .copy i:hover {
+	color: #fff;
+	transform: scale(1.5);
+}
+
+
+
+/*	About Page 	*/
+.about-intro {
+	font-family: 'Roboto Slab',serif;
+	font-size: 40px;
+	margin: 20px;
+	color: #1a1a2e;
+	text-align: center;
+}
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 25px 150px;
+	margin-top: 75px;
+	background: #fff;
+	border-radius: 5px;
+	border-bottom: 5px solid #1a1a2e;
+	border-top: 5px solid #1a1a2e;
+}
+
+.about img {
+	width: 400px;
+	margin: 5px;
+
+}
+
+.about h1{
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	margin-top: 10px;
+	color: #1a1a2e;
+}
+
+.about p{
+	font-family: 'Roboto Slab', serif;
+	padding: 25px;
+	line-height: 1.5;
+	color: #1a1a2e;
+	font-weight: bold;
+}
+
+.tools {
+	
+	background: #fff;
+	border-radius: 5px;
+	padding-bottom: 45px;
+}
+ 
+.tools h1 {
+	color:#1a1a2e;
+}
+
+.tools-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-radius: 8px;
+	margin: 45px 150px;
+	border-bottom: 8px solid #1a1a2e;
+	border-top: 8px solid #1a1a2e;
+}
+
+#toolsImage {	
+	background-image: url('../img/gallery4.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 5px;
+	transition: 1s all ease-in-out;
+}
+
+.tools ul {
+	margin-left: 150px;
+	list-style: none;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.tools ul li {
+	font-family: 'Roboto Slab', serif;
+	line-height: 2.2;
+	font-weight: bold;
+	font-size: 35px;
+	color:#1a1a2e;
+	cursor: pointer;
+}
+
+.tools ul li:hover {
+	text-decoration: underline;
+}
+
+.skills-about {
+	background: #1a1a2e;
+	margin-top: 75px;
+}
+
+.skills-about h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size:35px;
+	font-weight: bold;
+	text-align: center;
+	color: #e94560;
+	padding-top: 25px;
+}
+
+.skills-about .card-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-about .card {
+	width: 300px;
+	height: 300px;
+	background: #e94560;
+	color: #1a1a2e;
+	margin: 60px;
+	border-radius: 5px;
+	margin-bottom: 60px;
+
+}
+
+.skills-about .card i {
+	margin: 45px;
+	margin-left: 125px;
+}
+
+.skills-about .card h2 {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+.skills-about .card h3 {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	margin: 25px;
+}
+
+
+/*	Portifolio Page   */
+
+.portifolio {
+	background: #fff;
+	margin: 75px 5px 5px 5px;
 	border-radius: 5px;
 	border-bottom: 5px solid #1a1a2e;
 }
@@ -170,17 +485,119 @@ header a .current {
 	font-weight: bold;
 	text-align: center;
 	color: #1a1a2e;
-	margin-top: 25px;
+	padding-top: 25px;
 	margin-bottom: 35px;
 }
 
 .portifolio-grid{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	margin-left: 30px;
-
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .portifolio-grid img {
-	margin: 5px;
+	width: 440px;
 }
+
+.portifolio #image {
+	position: relative;
+	height: 514.75px;
+	width: 440px;
+	cursor: pointer;
+}
+
+.portifolio #image-inner {
+	position: absolute;
+	background: #1a1a2e;
+	opacity: .5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	transition: 2s all ease-in-out;
+	color: #fff;
+}
+
+.portifolio #image-inner i{
+	margin-top: 10px;
+	margin-left: 410px;
+	transition: .7s all ease-in-out;
+}
+
+.portifolio #image-inner i:hover{
+	transform: rotate(90deg);
+	color: #e94560;
+}
+/*.portifolio-grid img:hover.image-inner {
+	display: block;
+}
+*/
+/*	Contact Page */
+.contact-form form {
+	margin-left: 80px;
+	margin-top: 15px;
+}
+
+.contact-form h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size:35px;
+	font-weight: bold;
+	text-align: center;
+	color: #1a1a2e;
+	padding-top: 25px;
+	margin-bottom: 35px;
+}
+
+
+.contact-form input {
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid #1a1a2e;
+	padding: 15px;
+	width: 560px;
+	margin: 15px;
+	font-family: 'Roboto Slab',serif;
+	color: #1a1a2e;
+	font-size: 18px;
+}
+
+.contact-form textarea {
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid #1a1a2e;
+	padding: 15px;
+	width: 1150px;
+	height: 250px;
+	margin: 15px;
+	font-family: 'Roboto Slab',serif;
+	color: #1a1a2e;
+	font-size: 18px;
+}
+
+.contact-form form button {
+	padding: 10px;
+	width: 1150px;
+	background: #1a1a2e;
+	border: 1px solid #e94560;
+	color: #e94560;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	font-size: 25px;
+	border-radius: 5px;
+	display: block;
+	margin: 15px;
+	outline: none;
+}
+
+.contact-form .address {
+	margin: 35px;
+	margin-left: 80px;
+}
+
+.contact-form .address h4{
+	color: #e94560;
+	font-family: 'Roboto Slab', serif;
+	padding: 25px;
+	font-size: 18px;
+}
+
