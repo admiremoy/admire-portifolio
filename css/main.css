@@ -73,6 +73,15 @@ header a.current {
 	background-size: cover;
 }
 
+.showcase h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 300px;
+	color:#e94560 ;
+	padding-left: 25px;
+	padding-top: 100px;
+	letter-spacing: 1;
+}
+
 .showcase h2{
 	font-family: 'Roboto Slab', serif;
 	color:#e94560;
@@ -82,13 +91,9 @@ header a.current {
 	padding-left: 450px;
 }
 
-.showcase h1{
-	font-family: 'Roboto Slab', serif;
-	font-size: 300px;
-	color:#e94560 ;
-	padding-left: 25px;
-	padding-top: 100px;
-	letter-spacing: 1;
+/*type Cursor*/
+.txt-type > .txt {
+	border-right: 0.2rem solid #e94560;
 }
 
 .about-section{
